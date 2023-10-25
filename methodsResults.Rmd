@@ -1,0 +1,31 @@
+---
+title: "methodsResults"
+author: "Nick Chevalier"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Methods
+
+Perform differential expression analysis by estimating the relative abundance of transcripts and applying statistical models to test for differential expression between treatment groups. 
+
+To estimate relative abundance we determine how many reads match a given gene within a genome using the program Salmon. Salmon is imported using tximport and then DESeq2 is used to perform statistical tests to identify differentially expressed genes. 
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
